@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Localio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img/background.jpg'); /* remplace avec ton image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: transparent;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #FBFBFB;
+        }
+
+        .red-box {
+    height: 40px;
+    width: 100px; /* ou autre valeur selon ton besoin */
+    background-color: #4472DA;
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    color: white; /* Couleur du texte si besoin */
+    font-weight: bold; /* Style */
+    border-radius: 10px; /* Arrondir les bords */
+}
+
+
+
+        .section2 {
+            background-color: rgba(255, 255, 255, 0.8); /* effet de transparence */
+            margin: 0;
+            backdrop-filter: blur(2px);
+        }
+
+        .section1 {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section1 {
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(2px);
+}
+
+
+        .text-bottom {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .test {
+            color: white;
+            background-color: #4472DA;
+            padding: 5px;
+            border-radius: 10px; /* Arrondir les bords */
+        }
+        
+        .text-bottom h1 {
+    margin-bottom: 10px; /* Ajuste la marge inférieure pour réduire l'espace sous le h1 */
+}
+
+.text-bottom h5 {
+    margin-top: 0; /* Enlève la marge par défaut en haut du h5 */
+}
+
+        
+        .test2 {
+    color:#4472DA;
+    padding: 5px;
+            background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .section2-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top-box {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .top-box-content {
+            max-width: 800px;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .top-box-content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #1a202c;
+        }
+
+        .top-box-content p {
+            margin-bottom: 12px;
+        }
+
+        .top-box-content ul {
+            margin-left: 20px;
+            padding-left: 0;
+            list-style: disc;
+            margin-bottom: 16px;
+        }
+
+        .top-box-content li {
+            margin-bottom: 8px;
+        }
+
+        .top-box-content a {
+            color: #1d4ed8;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .top-box-content a:hover {
+            color: #2563eb;
+        }
+
+        .bottom-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Couleur du texte si besoin */
+            font-weight: bold; 
+            font-size: 1.5rem;
+            background-color: #4472DA;
+            padding: 20px;
+            backdrop-filter: blur(6px);
+        }
+        
+        .section3-container {
+    max-width: 1100px; /* ou 1000px selon ton goût */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+        
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px; /* Réduit la hauteur */
+    backdrop-filter: blur(4px);
+}
+
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+        .section3 {
+            display: flex;
+            gap: 10px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .box {
+            flex: 1;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .box-text {
+            padding: 20px;
+        }
+
+        .box-text h4 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+            color: #1a202c;
+        }
+
+        .box-text p {
+            margin: 0;
+            font-size: 1rem;
+            color: #4a5568;
+        }
+        
+        .section3 .box {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px; /* Arrondi les coins */
+    overflow: hidden; /* Empêche l'image de déborder */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Assure une hauteur uniforme pour toutes les boîtes */
+}
+
+.section3 .box img {
+    width: 100%;
+    height: 200px; /* Fixe une hauteur uniforme pour les images */
+    object-fit: cover; /* Remplie l'espace sans déformer l'image */
+    border-bottom: 2px solid #e0e0e0; /* Optionnel, ajout d'une bordure sous l'image */
+}
+
+.section3 .box-text {
+    padding: 20px;
+}
+
+.section3 .box-text h4 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #1a202c;
+}
+
+.section3 .box-text p {
+    margin: 0;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="red-box"><p>Localio</p></div>
+    </header>
+
+    <div class="section section1">
+        <div class="text-bottom">
+            <h1 class="test2">Localio</h1>
+            <h5 class="test">Dépensez localement, agissez globalement !</h5>
+        </div>
+    </div>
+
+    <div class="section section2">
+        <div class="section2-content">
+            <div class="top-box">
+                <div class="top-box-content">
+                    <h2>À propos de nous</h2>
+
+                    <p>
+                         Nous sommes <strong>Alan et Calvin</strong>, deux étudiants en ingénierie logicielle à la HEIG-VD. Ayant grandi dans deux villages du canton de Neuchâtel, nous avons toujours eu l’habitude de fréquenter les commerces locaux. Cependant, ces dernières années, nous avons constaté une baisse de leur fréquentation.
+                    </p>
+
+                    <p>
+                       C’est de là qu’est née l’idée de créer <strong>Localio</strong> ! Notre mission est d’encourager les visites dans ces commerces afin de leur assurer une place essentielle dans nos villes et villages.
+                    </p>
+
+                    <p>
+                        Localio est un programme de fidélité en cours de développement, qui permettra aux commerçants et restaurateurs d’offrir au public un système de points via smartphone. En plus de renforcer leur visibilité, l’application mettra en avant leurs offres actuelles pour fidéliser davantage de clients.
+                    </p>
+
+                    <p><strong>La marche à suivre sera la suivante :</strong></p>
+
+                    <ul>
+                        <li>L'utilisateur aura une liste des commerces participants à proximité sur son smartphone.</li>
+                        <li>Après avoir effectué un achat, l'utilisateur recevra un certain nombre de points en scannant un code.</li>
+                        <li>Avec ses points, l'utilisateur pourra les échanger contre une offre du commerçant dès qu'il en aura suffisamment.</li>
+                        <li>Les points ne sont pas globaux; chaque point acquis dans un commerce ne pourra être utilisé que dans ce même commerce.</li>
+                    </ul>
+
+                    <p>
+                        Nous espérons que l'idée vous plaira, et n'hésitez pas à nous envoyer des feedbacks à <a href="mailto:app.localio@gmail.com">app.localio@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-box">Nos services</div>
+        </div>
+    </div>
+
+    <div class="section3">
+        <div class="section3-container">
+        <div class="box">
+            <img src="img/econ.jpg" alt="Image 1" />
+            <div class="box-text">
+                <h4>Économique</h4>
+                <p>Localio permettra aux clients de soutenir les commerces locaux participants de manière avantageuse grâce à un système de points de fidélité.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/ecolo.jpg" alt="Image 2" />
+            <div class="box-text">
+                <h4>Écologique</h4>
+                <p>Avec des serveurs basés en Suisse, nous privilégions l’écologie en soutenant une consommation plus responsable à travers les commerces locaux.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/avant.jpg" alt="Image 3" />
+            <div class="box-text">
+                <h4>Avantageux</h4>
+                <p>Localio est avantageux autant pour les clients que pour les commerçants. En effet, la mise en place d’un système de points encouragera les clients à revenir tout en dynamisant votre commerce.</p>
+            </div>
+        </div>
+            </div>
+    </div>
+    
+    <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Localio.</p>
+        <p>Contact : <a href="mailto:app.localio@gmail.com">app.localio@gmail.com</a></p>
+    </div>
+</footer>
+
+</body>
+    
+    
+</html>
