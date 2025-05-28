@@ -14,7 +14,6 @@
         }
 
         header {
-            background-color: transparent;
             height: 50px;
             display: flex;
             align-items: center;
@@ -22,20 +21,21 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: #FBFBFB;
+            background-color: rgba(251, 251, 251, 0.8); /* Fond blanc avec opacité 80% */
         }
 
+
+
         .red-box {
-    height: 40px;
-    width: 100px; /* ou autre valeur selon ton besoin */
-    background-color: #4472DA;
-    display: flex;
-    align-items: center; /* Centrage vertical */
-    justify-content: center; /* Centrage horizontal */
-    color: white; /* Couleur du texte si besoin */
-    font-weight: bold; /* Style */
-    border-radius: 10px; /* Arrondir les bords */
-}
+            height: 40px;
+            width: 100px; /* ou autre valeur selon ton besoin */
+            display: flex;
+            align-items: center; /* Centrage vertical */
+            justify-content: center; /* Centrage horizontal */
+            color: white; /* Couleur du texte si besoin */
+            font-weight: bold; /* Style */
+            border-radius: 10px; /* Arrondir les bords */
+        }
 
 
 
@@ -76,7 +76,7 @@
         
         .test {
             color: white;
-            background-color: #4472DA;
+            background-color: #E7391E;
             padding: 5px;
             border-radius: 10px; /* Arrondir les bords */
         }
@@ -166,7 +166,7 @@
             color: white; /* Couleur du texte si besoin */
             font-weight: bold; 
             font-size: 1.5rem;
-            background-color: #4472DA;
+            background-color: #E7391E;
             padding: 20px;
             backdrop-filter: blur(6px);
         }
@@ -292,15 +292,19 @@
 </head>
 <body>
     <header>
-        <div class="red-box"><p>Localio</p></div>
+        <img src="img/font.png" alt="Image centrée" style="max-width: 100px;" />
     </header>
 
     <div class="section section1">
-        <div class="text-bottom">
-            <h1 class="test2">Localio</h1>
-            <h5 class="test">Dépensez localement, agissez globalement !</h5>
-        </div>
+    <div class="centered-image">
+        <img src="img/logo.png" alt="Image centrée" style="max-width: 200px;" />
     </div>
+    <div class="text-bottom">
+        <img src="img/font.png" alt="Image centrée" style="max-width: 200px;" />
+        <h5 class="test">Dépensez localement, agissez globalement !</h5>
+    </div>
+</div>
+
 
     <div class="section section2">
         <div class="section2-content">
@@ -358,7 +362,7 @@
             <img src="img/avant.jpg" alt="Image 3" />
             <div class="box-text">
                 <h4>Avantageux</h4>
-                <p>Localio est avantageux autant pour les clients que pour les commerçants. En effet, la mise en place d’un système de points encouragera les clients à revenir tout en dynamisant votre commerce.</p>
+                <p>Localio est avantageux autant pour les clients que pour les commerçants. En effet, la mise en place du système de points encouragera les clients à revenir tout en dynamisant votre commerce.</p>
             </div>
         </div>
             </div>
